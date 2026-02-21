@@ -15,10 +15,11 @@ const Auth = () => {
         I am not a robot
       </label>
 
+      {/* 👇 IMPORTANT: exact text */}
       <p>
         {isAuthenticated
-          ? "User is authenticated"
-          : "User is not authenticated"}
+          ? "User is authenticated."
+          : "User is not authenticated."}
       </p>
     </div>
   );
