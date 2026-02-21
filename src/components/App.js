@@ -1,11 +1,12 @@
 
-import React from "react";
+import React, { useState, createContext, useContext } from "react";
 import './../styles/App.css';
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <h2>Mock Authentication using useContext</h2>
+      <Auth />
     </div>
   )
 }
