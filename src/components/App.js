@@ -1,6 +1,5 @@
-
-import React, { useState, createContext, useContext } from "react";
-import './../styles/App.css';
+import React from "react";
+import Auth from "./components/Auth";
 
 const App = () => {
   return (
@@ -8,7 +7,10 @@ const App = () => {
       <h2>Mock Authentication using useContext</h2>
       <Auth />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
+
+// ✅ ADD THIS LINE
+export { Auth };
