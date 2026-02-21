@@ -6,21 +6,25 @@ const Auth = () => {
 
   return (
     <div>
+      {/* EXACT heading text */}
+      <h2>Click on the checkbox to get authenticated</h2>
+
+      {/* EXACT message text */}
+      <p>
+        {isAuthenticated
+          ? "You are now authenticated, you can proceed"
+          : "You are not authenticated"}
+      </p>
+
+      {/* EXACT checkbox label */}
       <label>
         <input
           type="checkbox"
           checked={isAuthenticated}
           onChange={toggleAuth}
         />
-        I am not a robot
+        I'm not a robot
       </label>
-
-      {/* 👇 IMPORTANT: exact text */}
-      <p>
-        {isAuthenticated
-          ? "User is authenticated."
-          : "User is not authenticated."}
-      </p>
     </div>
   );
 };
